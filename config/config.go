@@ -15,7 +15,8 @@ type Config struct {
 
 var DefaultConfig = Config{
 	Period: 5 * time.Second,
-	Sudo:   true,
+	Sudo:   false,
+	Lock:   false,
 	Table:  "filter",
 	Chain:  []string{"INPUT"},
 }
